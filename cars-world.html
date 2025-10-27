@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cars-World – React Native Project</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cars-world.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="back-link" aria-label="Back to portfolio">←</a>
+      <h1>Cars-World (React Native)</h1>
+    </div>
+  </header>
+
+  <section class="intro section">
+    <div class="about card">
+      <h2>About<br>Cars-World</h2>
+      <p>
+        Cars-World is my first mobile application, built with React Native & Expo.
+        It allows users to browse car models, view specs, add to cart, and book.
+      </p>
+    </div>
+
+    <div class="features card">
+      <h3>Key Features</h3>
+      <ul>
+        <li>Category & detail screens with images, price & year.</li>
+        <li>“Add to Cart” & booking with form validation.</li>
+        <li>Dark mode support via global ThemeContext.</li>
+        <li>Order history inside Profile screen.</li>
+      </ul>
+    </div>
+  </section>
+
+<section class="screens section">
+  <h3>Screenshots</h3>
+
+  <!-- Grid gallery: 4 columns on desktop, wraps responsively -->
+  <div class="gallery-grid" id="screens-gallery">
+    <figure class="gallery-item" data-index="0">
+      <img src="images/1.png" alt="Signup Page" loading="lazy">
+      <figcaption>Signup Page</figcaption>
+    </figure>
+    <figure class="gallery-item" data-index="1">
+      <img src="images/2.png" alt="Signup Page" loading="lazy">
+      <figcaption>After Signup Popup will show</figcaption>
+    </figure>
+    <figure class="gallery-item" data-index="2">
+      <img src="images/3.png" alt="Home / Browse" loading="lazy">
+      <figcaption>login page</figcaption>
+    </figure>
+    <figure class="gallery-item" data-index="3">
+      <img src="images/4.png" alt="Category List" loading="lazy">
+      <figcaption>Forget Password Page</figcaption>
+    </figure>
+    <figure class="gallery-item" data-index="4">
+      <img src="images/5.png" alt="Product Detail" loading="lazy">
+      <figcaption>Home Page (Show category)</figcaption>
+    </figure>
+    <figure class="gallery-item" data-index="5">
+      <img src="images/6.png" alt="Add to Cart" loading="lazy">
+      <figcaption>Search Popular cars In Home Page</figcaption>
+    </figure>
+    <figure class="gallery-item" data-index="6">
+      <img src="images/7.png" alt="Checkout" loading="lazy">
+      <figcaption>Searching </figcaption>
+    </figure>
+    <figure class="gallery-item" data-index="7">
+      <img src="images/8.png" alt="Payment" loading="lazy">
+      <figcaption>Product Details Page</figcaption>
+    </figure>
+    <figure class="gallery-item" data-index="8">
+      <img src="images/9.png" alt="Booking" loading="lazy">
+      <figcaption>Popup(After Adding in Cart)</figcaption>
+    </figure>
+    <figure class="gallery-item" data-index="9">
+      <img src="images/10.png" alt="Profile" loading="lazy">
+      <figcaption>Cart Section</figcaption>
+    </figure>
+    <figure class="gallery-item" data-index="10">
+      <img src="images/11.png" alt="Order History" loading="lazy">
+      <figcaption>Personal Details (For Booking) </figcaption>
+    </figure>
+    <figure class="gallery-item" data-index="11">
+      <img src="images/12.png" alt="Search & Filters" loading="lazy">
+      <figcaption>Popup For Confirm Your Booking</figcaption>
+    </figure>
+    <figure class="gallery-item" data-index="12">
+      <img src="images/13.png" alt="Settings" loading="lazy">
+      <figcaption>Loading Process</figcaption>
+    </figure>
+    <figure class="gallery-item" data-index="13">
+      <img src="images/14.png" alt="Notifications" loading="lazy">
+      <figcaption>Popup (After booking is Confirmed)</figcaption>
+    </figure>
+    <figure class="gallery-item" data-index="14">
+      <img src="images/15.png" alt="Onboarding" loading="lazy">
+      <figcaption>Profile Page</figcaption>
+    </figure>
+    <figure class="gallery-item" data-index="15">
+      <img src="images/16.png" alt="Splash" loading="lazy">
+      <figcaption>Options</figcaption>
+    </figure>
+    <figure class="gallery-item" data-index="16">
+      <img src="images/17.png" alt="Help / FAQ" loading="lazy">
+      <figcaption>Ordered History </figcaption>
+    </figure>
+    <figure class="gallery-item" data-index="17">
+      <img src="images/18.png" alt="Feedback" loading="lazy">
+      <figcaption>Language Options</figcaption>
+    </figure>
+  </div>
+</section>
+
+
+  <section class="source section">
+    <p>📌 Source code: 
+      <a href="https://github.com/Anis-88/cars-world" target="_blank">GitHub Repo</a>
+    </p>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2025 Anish J — Cars-World</p>
+  </footer>
+
+  <!-- Image Modal (with navigation arrows) -->
+  <div id="imageModal" class="modal" aria-hidden="true" role="dialog">
+    <button class="modal-close" aria-label="Close">&times;</button>
+    <button class="modal-nav prev" id="modalPrev" aria-label="Previous">❮</button>
+    <div class="modal-body">
+      <img class="modal-content" id="modalImage" alt="">
+      <div class="modal-caption" id="modalCaption"></div>
+    </div>
+    <button class="modal-nav next" id="modalNext" aria-label="Next">❯</button>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const items = Array.from(document.querySelectorAll('.gallery-item'));
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('modalImage');
+      const modalCaption = document.getElementById('modalCaption');
+      const closeBtn = modal.querySelector('.modal-close');
+      const prevBtn = document.getElementById('modalPrev');
+      const nextBtn = document.getElementById('modalNext');
+
+      if (!items.length) return;
+
+      let currentIndex = 0;
+
+      function updateModal() {
+        const img = items[currentIndex].querySelector('img');
+        const caption = items[currentIndex].querySelector('figcaption');
+        modalImg.src = img.src;
+        modalImg.alt = img.alt || '';
+        modalCaption.textContent = caption ? caption.textContent : (img.alt || '');
+        prevBtn.disabled = currentIndex === 0;
+        nextBtn.disabled = currentIndex === items.length - 1;
+      }
+
+      function openModal(index) {
+        currentIndex = index;
+        updateModal();
+        modal.style.display = 'block';
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        modal.style.display = 'none';
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      items.forEach((item, i) => {
+        item.addEventListener('click', () => openModal(i));
+      });
+
+      prevBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (currentIndex > 0) {
+          currentIndex -= 1;
+          updateModal();
+        }
+      });
+
+      nextBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (currentIndex < items.length - 1) {
+          currentIndex += 1;
+          updateModal();
+        }
+      });
+
+      closeBtn.addEventListener('click', closeModal);
+
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (modal.style.display !== 'block') return;
+        if (e.key === 'Escape') closeModal();
+        if (e.key === 'ArrowLeft') prevBtn.click();
+        if (e.key === 'ArrowRight') nextBtn.click();
+      });
+    });
+  </script>
+
+</body>
+</html>

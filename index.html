@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anish Portfolio</title>
+
+  <!-- Google font + Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" xintegrity="sha512-yH6X...REPLACE-IF-NEEDED" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#0f172a">
+</head>
+<body>
+  <!-- PARTICLES CANVAS (script will use this) -->
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <!-- HEADER / NAV -->
+  <header class="site-header">
+    <div class="nav-wrap">
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#blog">Blog</a>
+        <a href="#education">Education & Experience</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn" href="#contact">Hire Me</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- HERO / HOME -->
+    <section id="home" class="hero">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <div class="eyebrow">Web & Frontend For Mobile App</div>
+          <h1>Hey, I'm <span class="accent">Anish</span> — building delightful apps & web.</h1>
+          <p class="lead">I design and code beautiful things focused on React, React Native and modern web. <span id="typewriter" class="typewriter"></span></p>
+
+          <div class="hero-ctas">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#contact">Let's talk</a>
+          </div>
+
+          <div class="chips">
+            <span class="chip">🏆 Open to work</span>
+            <span class="chip">📍 India</span>
+            <span class="chip">📧 anishjaya2001@gmail.com</span>
+          </div>
+        </div>
+
+      <aside class="profile-card card">
+  <div class="profile-top">
+    <!-- Replace AJ avatar with logo -->
+    <div class="avatar">
+      <img src="images/logo.png" alt="Anish Logo">
+    </div>
+
+    <div class="meta">
+      <div class="name">Anish J</div>
+      <small class="role">Frontend & Web Developer</small>
+    </div>
+
+    <div class="exp">
+      <small>Internship</small>
+      <div class="days">15 Days</div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="profile-bottom">
+    <div class="top-skills">
+      <small>Top Skills</small>
+      <div class="skill-chips">
+        <span class="chip">React</span>
+        <span class="chip">React Native</span>
+        <span class="chip">Node</span>
+        <span class="chip">HTML</span>
+      </div>
+    </div>
+  </div>
+</aside>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section card">
+      <h2>About Me</h2>
+      <p>
+       I hold a Diploma in Mechanical Engineering from Government Polytechnic College, Nagercoil, and I am currently pursuing a Bachelor of Engineering in Computer Science Engineering.
+      </p>
+      <p>
+       Mechanical engineering was my first path in academics. It helped me learn strong problemsolving skills, technical discipline, and how design works.I moved into computer science to concentrate on software development, app development, and creative ideas as my interests changed towards technology.
+      </p>
+      <p>
+       MS Office tools, Python programming, React Native mobile app building, and MS Office tools all have personal experience.I developed CarsWorld, my first mobile application, which is a React Native car sales app recently.This project helped me better understand API integration, navigation systems, and UI design.Using HTML, CSS, and JavaScript, I also created and built my first animated portfolio website, which highlights my projects, abilities, and creativity in a graphically appealing manner.
+      </p>
+      <p>
+       Combining my programming skills with my engineering knowledge, I want to create projects linking mechanical systems with digital innovation..
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill card">
+          <p class="skill-title">Productivity — MS Office</p>
+          <div class="progress"><span data-width="95%"></span></div>
+        </div>
+        <div class="skill card">
+          <p class="skill-title">Mobile — React Native, Expo</p>
+          <div class="progress"><span data-width="85%"></span></div>
+        </div>
+        <div class="skill card">
+          <p class="skill-title">Frontend — React, HTML, CSS</p>
+          <div class="progress"><span data-width="90%"></span></div>
+        </div>
+      </div>
+    </section>
+
+      <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+          <a href="cars-world.html" class="card-link">
+        <article class="project card">
+          <h3>Cars-World (React Native)</h3>
+          <p>Mobile app for buying and booking cars.</p>
+        </article>
+</a>
+  
+        <article class="project card">
+          <h3>Animated Portfolio (This)</h3>
+          <p>Separated HTML/CSS/JS portfolio.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+<section id="blog" class="section">
+  <h2>Blog</h2>
+  <div class="blog-list">
+    <article class="post card" data-blog="1">
+      <strong>How I built Cars-World</strong>
+      <div class="meta">July 2025 · React Native</div>
+      <a class="btn ghost read-btn" href="javascript:void(0)">Read</a>
+      <div class="blog-full">
+        <p>
+         Creating CarsWorld, my first mobile app, was a thrilling but demanding trip.My love of automobiles and my fascination with mobile app development inspired the concept.I wanted to design a system whereby customers could peruse various car models, examine in-depth specs, and conveniently book or buy them.
+        </p>
+        <p>
+         I selected React Native with Expo SDK 53 so that I could quickly develop and test on both Android and iOS.Using a global Theme Context, I included car categories, detailed pages with price and year, an "Add to Cart" button, a booking form with validation, and even a dark mode toggle.
+        </p>
+        <p>
+         Navigation was among the most important things I learned. I used React Navigation to make a smooth flow between screens, which included a bottom tab bar for quick access to the Category, Search, Cart, and Profile pages.I also discovered how to show order history in the profile page and how to preserve it.
+        </p>
+        <p>
+         There were difficulties along the way. I had trouble with form validation, styling, and state management, but every challenge taught me something fresh.I had not just a working app by the end but also a far better grasp of how mobile apps are organized.
+        </p>
+        <p>For Code Details -> <a href="https://github.com/Anis-88/cars-world" target="_blank">GitHub link </a> </p>
+
+        </div>
+    </article>
+
+    <article class="post card" data-blog="2">
+      <strong> Animations Portfolio</strong>
+      <div class="meta">August 2025 · HTML, CSS, JS</div>
+      <a class="btn ghost read-btn" href="javascript:void(0)">Read</a>
+      <div class="blog-full">
+        <p>
+         One of the most thrilling phases of my path as a developer was making my first animated portfolio website.I wanted something more than simply a fixed page; I wanted it to feel alive and properly reflect my skills and attitude.
+        </p>
+        <p>
+          Starting with a basic HTML, CSS, and JavaScript configuration, I then included animations to increase the level of interaction on the website.To make every part come alive, I applied smooth scrolling, fadeins, skill bar animations, and hover effects.My aim was to create for the visitor not only a portfolio but also an experience on the website.
+        </p>
+        <p>
+          Balancing performance with animations was the trickiest thing to do; I wanted the site to load quickly without being overly showy.Learning how to maximize my code, reduce animation delays, and ensure the design is responsive for mobile and desktop helped me
+        </p>
+        <p>
+          Sections for About Me, Skills, and Contact subtly direct the eyes of the visitor down the page.Every color and animation decision was deliberate and meant to help my work stand out.
+        </p>
+        <p>
+          Seeing my first animated portfolio come to life was quite fulfilling.It's not only a website; it's my internet personal brand that will change as I develop.
+        </p>
+      </div>
+    </article>
+  </div>
+</section>
+
+    <!-- Education & Experience -->
+    <section id="education" class="section">
+          <h2>Education & Experience</h2>
+        <div class="resume-grid">
+        
+        <div class="block card">
+          <h4>EDUCATION</h4>
+          <ul>
+          <li><p>Diploma in Mechanical — Government Polytechnic Currently studying B.E. Computer Science</p></li></ul>
+        </div>
+
+        <div class="block card">
+          <h4>INTERNSHIP</h4>
+          <ul>
+            <li>Mobile App Development (React) In Feather software (08-07-2025 to 28-07-2025)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates" class="section certificates-section">
+      <div class="section-header">
+        <h2>Certificates</h2>
+      </div>
+      <div class="certificates-grid">
+        <div class="certificate-card card" data-certificate="msoffice">
+          <h4>MS OFFICE</h4>
+        </div>
+        <div class="certificate-card card" data-certificate="adpp">
+          <h4>ADPP</h4>
+          <span class="view-cert">(C, C++, Python)</span>
+        </div>
+        <div class="certificate-card card" data-certificate="hackathon">
+          <h4>Hackathon</h4>
+          <span class="view-cert">(Thoothukudi District Police for participating in Hackathon 2025)</span>
+        </div>
+        <div class="certificate-card card" data-certificate="reactnative">
+          <h4>React Native</h4>
+          <span class="view-cert">(Internship Certificate)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificate Modal -->
+    <div id="certModal" class="cert-modal">
+      <!-- Close button will appear centered below the image -->
+      <img id="certImage" class="cert-modal-content" src="" alt="Certificate">
+      <button type="button" class="cert-modal-bottom-close" aria-label="Close">Close</button>
+    </div>
+
+    <!-- CONTACT (BOTTOM) -->
+    <section id="contact" class="section contact-section card">
+      <h2>Contact</h2>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="connect">Let’s connect — I’m open to freelance & full-time roles.</p>
+          <div class="socials">
+            <!-- Instagram -->
+            <a class="social" href="https://instagram.com/ani_._zz" target="_blank" rel="noopener" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <!-- Facebook -->
+            <a class="social" href="https://www.facebook.com/share/16vMyVLFRf/" target="_blank" rel="noopener" aria-label="Facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+
+            <!-- WhatsApp -->
+            <a class="social" href="https://wa.me/7010140108" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+
+            <!-- Email -->
+            <a class="social" href="mailto:anishjaya2001@gmail.com" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <!-- LinkedIn -->
+            <a class="social" href="https://www.linkedin.com/in/anish-j-3797a234a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+ <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">© 2025 Anish J — Built with ❤️</div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Prevent right-click
+    document.addEventListener('contextmenu', (e) => {
+      e.preventDefault();
+    });
+
+    // Certificate Modal Functionality (robust init)
+    (function() {
+      function initCertModal() {
+        const modal = document.getElementById('certModal');
+        if (!modal) return; // nothing to do
+
+  const modalImg = document.getElementById('certImage');
+  // target the new bottom-centered close button
+  const closeBtn = document.querySelector('.cert-modal-bottom-close');
+        const certCards = document.querySelectorAll('.certificate-card');
+
+        // Certificate images mapping
+        const certImages = {
+          'msoffice': 'images/ms office.png',
+          'adpp': 'images/adpp.png',
+          'hackathon': 'images/hackathon.png',
+          'reactnative': 'images/internship.png'
+        };
+
+        // Open modal with certificate
+        certCards.forEach(card => {
+          card.addEventListener('click', () => {
+            const certId = card.dataset.certificate;
+            if (certImages[certId]) modalImg.src = certImages[certId];
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+            document.body.classList.add('cert-modal-open');
+          });
+        });
+
+        // Close modal
+        function closeModal() {
+          modal.style.display = 'none';
+          document.body.style.overflow = '';
+          document.body.classList.remove('cert-modal-open');
+        }
+
+  if (closeBtn) closeBtn.addEventListener('click', () => { closeModal(); });
+
+        // Clicking outside image (on overlay) closes modal
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) closeModal();
+        });
+
+        // Escape key closes modal
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && modal.style.display === 'flex') closeModal();
+        });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCertModal);
+      } else {
+        initCertModal();
+      }
+    })();
+  </script>
+</body>
+</html>
