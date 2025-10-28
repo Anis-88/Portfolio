@@ -237,8 +237,6 @@ hr { border:none; height:1px; background:rgba(255,255,255,0.03); margin:12px 0 }
 .social:hover {
   transform:translateY(-6px) scale(1.06); box-shadow:0 12px 30px rgba(2,6,23,0.45)
 }
-.social[href*="instagram"]{ --brand:#e1306c }
-.social[href*="facebook"]{ --brand:#1877f2 }
 .social[href*="wa.me"], .social[href*="whatsapp"]{ --brand:#25D366 }
 .social[href*="mailto"], .social[aria-label="Email"]{ --brand:#9b59b6 }
 .social[href*="linkedin"]{ --brand:#0A66C2 }
@@ -438,3 +436,4 @@ hr { border:none; height:1px; background:rgba(255,255,255,0.03); margin:12px 0 }
 .card-link .card {
   cursor: pointer;         /* shows pointer on hover */
 }
+
